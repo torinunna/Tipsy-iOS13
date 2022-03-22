@@ -50,6 +50,8 @@ class CalculatorViewController: UIViewController {
             finalResult = String(format: "%.2f", result)
             print(finalResult)
         }
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
 
