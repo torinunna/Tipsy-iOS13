@@ -50,8 +50,18 @@ class CalculatorViewController: UIViewController {
             finalResult = String(format: "%.2f", result)
             print(finalResult)
         }
-        
         self.performSegue(withIdentifier: "goToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.result = finalResult
+            destinationVC.tip = Int(tip * 100)
+            destinationVC.split = number
+        }
+        
     }
     
 

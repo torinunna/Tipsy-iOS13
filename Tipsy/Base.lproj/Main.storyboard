@@ -294,7 +294,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="settingLabel" destination="HGt-bn-sCv" id="Bvb-ux-mf0"/>
+                        <outlet property="settingsLabel" destination="HGt-bn-sCv" id="Bvb-ux-mf0"/>
                         <outlet property="totalLabel" destination="uLJ-ii-hft" id="Dpr-Tf-yPL"/>
                     </connections>
                 </viewController>
